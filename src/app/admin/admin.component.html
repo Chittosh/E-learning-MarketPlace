@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col bg-dark text-white">
+      <a class="navbar-brand">Learnify Admin</a>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div >
+      <div class="button-row">
+        <button class="btn btn-outline-info btn-block courses"
+                routerLink="/admin/main/products"
+                routerLinkActive="active">
+          Courses
+        </button>
+        <button class="btn btn-outline-info btn-block orders"
+                routerLink="/admin/main/orders"
+                routerLinkActive="active">
+          Enrolled
+        </button>
+        <button class="btn btn-outline-danger btn-block logout"
+                (click)="logout()">
+          Logout
+        </button>
+      </div>
+    </div>
+
+    <div class="col-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
